@@ -6,12 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Festival Greeting App</title>
 
+  <!-- TailwindCSS Link -->
   <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
-<body>
+<body class="bg-gray-900">
 
-  <h1 class="bg-blue-700 text-white font-bold text-6xl mx-auto">Kakashi Hatake</h1>
+  <div class="flex items-center max-w-xl mx-auto h-screen">
+    <form action="" class="bg-white p-10 rounded">
+      <input type="text" name="name" placeholder="Enter your name"
+        class="bg-gray-200 px-3 py-2 rounded outline-none w-full" autofocus required>
+      <button class="px-4 py-2 mt-5 w-full rounded bg-blue-500 text-white font-semibold hover:bg-blue-600">Create your
+        greeting</button>
+    </form>
+  </div>
 
   <script type="module" src="./src/js/main.js"></script>
 </body>
